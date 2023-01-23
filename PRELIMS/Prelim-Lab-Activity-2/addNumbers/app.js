@@ -1,2 +1,2 @@
 var add = require('./add.js');
-console.log(add());
+console.log(add(17, 24));
