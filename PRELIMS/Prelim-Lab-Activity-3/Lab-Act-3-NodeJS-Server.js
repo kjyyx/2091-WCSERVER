@@ -16,19 +16,19 @@ var server = http.createServer(function (req, res) {
     res.end();
   } 
   
-  else if ((req.url = '/about')) {
+  else if ((req.url == '/about')) {
     res.writeHead(200, { 'Content-Type': 'text/html' });
     res.write('<html><body><h>This is the About Page</h1><p>Hello. This activity will teach you on how to deal with a simple server and local modules in Node.js</p></body></html>');
     res.end();
   } 
 
-  else if ((req.url = '/contact')) {
+  else if ((req.url == '/contact')) {
     res.writeHead(200, { 'Content-Type': 'text/html' });
-    res.write('<html><body><h>This is the Contact Page</h1><p>if you wwant additional details about this activity go to this site: https</p></body></html>');
+    res.write('<html><body><h>This is the Contact Page</h1><p>if you wwant additional details about this activity go to this site: https://www.tutorialsteacher.com/nodejs</p></body></html>');
     res.end();
   } 
 
-  else if ((req.url = '/admin')) {
+  else if ((req.url == '/admin')) {
     res.writeHead(200, { 'Content-Type': 'text/html' });
     res.write('<html><body> <p>This is admin Page.</p> </body></html>');
     res.end();
