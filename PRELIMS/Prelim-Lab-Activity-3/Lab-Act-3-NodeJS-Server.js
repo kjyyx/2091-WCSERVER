@@ -14,7 +14,6 @@ var server = http.createServer(function (req, res) {
     // set response content
     res.write('<html><body> <p>This is home Page.</p> </body></html>');
     res.end();
-
   } 
   
   else if ((req.url = '/student')) {
