@@ -24,7 +24,7 @@ var server = http.createServer(function (req, res) {
 
   else if ((req.url == '/contact')) {
     res.writeHead(200, { 'Content-Type': 'text/html' });
-    res.write('<html><body><h>This is the Contact Page</h1><p>John Smith, if you wwant additional details about this activity go to this site: https://www.tutorialsteacher.com/nodejs</p></body></html>');
+    res.write('<html><body><h1>This is the Contact Page</h1><p>John Smith, if you wwant additional details about this activity go to this site: https://www.tutorialsteacher.com/nodejs</p></body></html>');
     res.end();
   } 
 
